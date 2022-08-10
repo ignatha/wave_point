@@ -30,13 +30,13 @@
                     <div class="logo"><a href="#"><img src="assets/img/logo.png" style="width:100%;max-width: 150px;" alt="wave-point"></a>
                     </div>
                     <ul class="links">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#"><img src="assets/img/event-logo.png" style="width:20px;" /> Cashback Event</a></li>
-                        <li><a href="#">Manual Guide</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li class="login-menu"><a href="#">Login</a></li>
-                        <li class="login-menu"><a href="#">Register</a></li>
+                        <li class="active"><a href="#">Home</a><span class="yellow"></span></li>
+                        <li><a href="#">About Us</a><span class="yellow"></span></li>
+                        <li><a href="#"><img src="assets/img/event-logo.png" style="width:20px;" /> Cashback Event</a><span class="yellow"></span></li>
+                        <li><a href="#">Manual Guide</a><span class="yellow"></span></li>
+                        <li><a href="#">Contact Us</a><span class="yellow"></span></li>
+                        <li class="login-menu"><a href="#">Login</a><span class="yellow"></span></li>
+                        <li class="login-menu"><a href="#">Register</a><span class="yellow"></span></li>
                     </ul>
                 </div>
                 <label for="show-search" class="search-icon"><i class="fa fa-search"></i></label>
@@ -112,7 +112,7 @@
                             <div class="container-content-with-image">
                                     <div class="content-with-image">
                                         <div class="img-container">
-                                            <img src="assets/img/garena.png" />
+                                            <img src="assets/img/wave_game.png" />
                                         </div>
                                         <button>WaveGame Payment</button>
                                     </div>
@@ -124,51 +124,51 @@
                                     </div>
                                     <div class="content-with-image">
                                         <div class="img-container">
-                                            <img src="assets/img/garena.png" />
+                                            <img src="assets/img/lyto.png" />
                                         </div>
                                         <button>LYTO</button>
                                     </div>
                                     <div class="content-with-image">
                                         <div class="img-container">
-                                            <img src="assets/img/garena.png" />
+                                            <img src="assets/img/google_play.png" />
                                         </div>
                                         <button>Google Play</button>
                                     </div>
                                     <div class="content-with-image">
                                         <div class="img-container">
-                                            <img src="assets/img/garena.png" />
+                                            <img src="assets/img/mog_play.png" />
                                         </div>
                                         <button>MOG Play</button>
                                     </div>
                                 <div class="content-with-image">
                                     <div class="img-container">
-                                        <img src="assets/img/garena.png" />
+                                        <img src="assets/img/steam.png" />
                                     </div>
-                                    <button>WaveGame Payment</button>
+                                    <button>Steam</button>
                                 </div>
                                 <div class="content-with-image">
                                     <div class="img-container">
-                                        <img src="assets/img/garena.png" />
+                                        <img src="assets/img/mobile_legend.png" />
                                     </div>
-                                    <button>Garena</button>
+                                    <button>Mobile Legend</button>
                                 </div>
                                 <div class="content-with-image">
                                     <div class="img-container">
-                                        <img src="assets/img/garena.png" />
+                                        <img src="assets/img/ovo.png" />
                                     </div>
-                                    <button>LYTO</button>
+                                    <button>OVO</button>
                                 </div>
                                 <div class="content-with-image">
                                     <div class="img-container">
-                                        <img src="assets/img/garena.png" />
+                                        <img src="assets/img/facebook_game.png" />
                                     </div>
-                                    <button>Google Play</button>
+                                    <button>Facebook Game Card</button>
                                 </div>
                                 <div class="content-with-image">
                                     <div class="img-container">
-                                        <img src="assets/img/garena.png" />
+                                        <img src="assets/img/grab.png" />
                                     </div>
-                                    <button>MOG Play</button>
+                                    <button>Grab</button>
                                 </div>
                             </div>
                         </div>
@@ -377,6 +377,16 @@
         }
 
         document.getElementById("defaultOpen").click();
+
+        $(function(){
+            $( ".links > li" )
+            .mouseover(function() {
+                $( this ).find('.yellow').css("display", "block");
+            })
+            .mouseout(function() {
+                $( this ).find('.yellow').css("display", "none");
+            });
+        });
     </script>
 </body>
 
