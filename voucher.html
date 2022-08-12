@@ -91,129 +91,22 @@
                         <form>
                             <div class="form-row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Nomor Mobile Legend">
+                                    <input type="text" name="id-mobile-legend" class="form-control" placeholder="Nomor Mobile Legend">
                                     <div class="spacer" style="height: 0.5rem;"></div>
                                     <div class="form-control"
                                         style="border:0;width: 100%;display:flex;justify-content: center;min-height: 1rem;background-color: #8C8C8C;">
-                                        <span>Nominal Voucher</span></div>
+                                        <span>Nominal Voucher</span>
+                                    </div>
                                     <fieldset class="checkbox-group">
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <span class="badges">Best Sale</span>
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <span class="badges">Best Sale</span>
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <span class="badges">Best Sale</span>
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <span class="badges">Best Sale</span>
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label class="checkbox-wrapper">
-                                                <input type="checkbox" class="checkbox-input" />
-                                                <span class="checkbox-tile">
-                                                    <span class="checkbox-icon">
-                                                        <strong>36</strong> Diamond
-                                                    </span>
-                                                    <span class="checkbox-label">11,250
-                                                        <img src="assets/img/wp_black.png" width="20" />
-                                                    </span>
-                                                </span>
-                                            </label>
-                                        </div>
                                     </fieldset>
                                     <hr class="dashed">
                                     <span class="total-span">
                                         <span>Pilihan Paket</span>
-                                        <span><strong>36 Diamond</strong></span>
+                                        <span><strong id="pilih-paket">0</strong></span>
                                     </span>
                                     <span class="total-span">
                                         <span>Sub Total</span>
-                                        <span style="color: #52944C;"><strong>11,250</strong></span>
+                                        <span style="color: #52944C;"><strong id="harga-paket">0</strong></span>
                                     </span>
                                     <div class="spacer" style="height: 3rem;"></div>
                                     <a class="btn buy-button" id="button-modal" href="#" data-bs-toggle="modal"
@@ -263,14 +156,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="confirmModalLabel">Confirmation Payment</h5>
-                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
                 </div>
                 <div class="modal-body">
                     <div class="balance">
-                        <span>Your Balance : </span>
+                        <span style="font-family: 'SourceSansPro-Regular' !important;">Your Balance : </span>
                         <span>
                             <img src="assets/img/wp_black.png" width="20">
-                            <span style="color: #52944C;"><strong> 11,250</strong></span>
+                            <span style="color: #52944C;"> <strong id="balance-price">0</strong></span>
                         </span>
                     </div>
                     <div class="spacer" style="height: 1rem;"></div>
@@ -288,9 +180,9 @@
                                     <th>Price</th>
                                 </tr>
                                 <tr>
-                                    <td>ID Mobile Legends</td>
+                                    <td><span id="id-ml">0</span></td>
                                     <td>1</td>
-                                    <td><img src="assets/img/wp_black.png" width="20" /> 224400</td>
+                                    <td><img src="assets/img/wp_black.png" width="20" /> <span id="confirm-price">0</span></td>
                                 </tr>
                             </table>
                         </div>
@@ -299,7 +191,7 @@
                             <div class="grand-total">
                                 <span></span>
                                 <span>Sub Total</span>
-                                <span>11,250</span>
+                                <span id="total-confirm-price">0</span>
                             </div>
                         </div>
                         <div class="spacer" style="height: 1rem;"></div>
@@ -342,16 +234,16 @@
                                 <th></th>
                             </tr>
                             <tr>
-                                <td>ID Mobile Legends</td>
+                                <td><span id="success-id-ml">0</span></td>
                                 <td>wegweg1451214</td>
                             </tr>
                             <tr>
                                 <td>Pilihan Paket</td>
-                                <td>36 Diamond</td>
+                                <td><span id="success-pilihan-paket">0</span></td>
                             </tr>
                             <tr style="font-weight: bold;border-top: 1px dashed #AAAAAA;color: #52944C;">
                                 <td>Sub Total</td>
-                                <td>11,250</td>
+                                <td><span id="success-price" style="font-family: 'Oswald' !important;">0</span></td>
                             </tr>
                         </table>
                         <div class="spacer" style="height: 2rem;"></div>
@@ -379,9 +271,36 @@
                 });
         });
 
-        $('#button-modal').on('click', function (event) {
-            event.preventDefault();
+        var data = { vouchers: [{ id: 1, name: "10 Diamond", price: 1000, hotsale: true }, { id: 2, name: "20 Diamond", price: 2000, hotsale: true }, { id: 3, name: "50 Diamond", price: 4500, hotsale: true }, { id: 4, name: "80 Diamond", price: 7000, hotsale: true }, { id: 5, name: "100 Diamond", price: 9000, hotsale: false }, { id: 6, name: "200 Diamond", price: 18000, hotsale: false }, { id: 7, name: "500 Diamond", price: 40000, hotsale: false }, { id: 8, name: "1000 Diamond", price: 80000, hotsale: false }] }
+
+        $.each(data.vouchers, function (key, value) {
+            const name = value.name.split(" ");
+            $( ".checkbox-group" ).append( '<div class="checkbox"><label class="checkbox-wrapper"><span class="badges">Best Sale</span><input type="radio" name="voucher-radio" value="'+value.id+'" class="checkbox-input" checked /><span class="checkbox-tile"><span class="checkbox-icon"><strong>'+name[0]+'</strong> '+name[1]+'</span><span class="checkbox-label">'+value.price+' <img src="assets/img/wp_black.png" width="20" /></span></span></label></div>' );
         });
+
+        $('input:radio[name="voucher-radio"]').change(
+            function(){
+                if ($(this).is(':checked')) {
+                    var item = getVoucher($(this).val())
+
+                    $("#pilih-paket").html(item.name);
+                    $("#harga-paket").html(item.price);
+
+                    $("#id-ml").html($('input:text[name="id-mobile-legend"]').val());
+                    $("#confirm-price").html(item.price);
+                    $("#balance-price").html(item.price);
+                    $("#total-confirm-price").html(item.price);
+
+                    $("#success-id-ml").html($('input:text[name="id-mobile-legend"]').val());
+                    $("#success-pilihan-paket").html(item.name);
+                    $("#success-price").html(item.price);
+                }
+            });
+
+        function getVoucher(id){
+            var item = data.vouchers.find(item => item.id == id);
+            return item
+        }
 
     </script>
 </body>

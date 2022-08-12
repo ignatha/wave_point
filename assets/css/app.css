@@ -32,6 +32,7 @@
     color: white;
     width: 100%;
     padding: 20px;
+    height: 100%;
 }
 
 .hero-text p {
@@ -253,7 +254,6 @@ hr.dashed {
     text-align: center !important;
     color: white;
     font-weight: bolder;
-    font-family: 'SourceSansPro-Regular' !important;
 
 }
 
@@ -289,12 +289,14 @@ hr.dashed {
     background-color: #E6E340;
     border-radius: 0 !important;
     font-weight: bolder;
+    font-family: 'SourceSansPro-Regular' !important;
 }
 
 #confirmModal .modal-footer button {
     width: calc((100% / 2) - 1rem);
     margin: 0.5rem !important;
     border-radius: 0 !important;
+    font-family: 'SourceSansPro-Regular' !important;
 }
 
 #confirmModal .modal-footer .cencel-button {
@@ -335,6 +337,12 @@ hr.dashed {
 .success-table td,
 .success-table th {
     width: 80%;
+    padding: 0.3rem 0 0.3rem 0;
+    font-family: 'SourceSansPro-Regular' !important;
+}
+
+.success-table span {
+    font-family: 'SourceSansPro-Regular' !important;
 }
 
 .subtotal {
@@ -352,7 +360,8 @@ table.subtotal-table {
 }
 
 table.subtotal-table td,
-table.subtotal-table th {
+table.subtotal-table th,
+table.subtotal-table span {
     font-family: 'SourceSansPro-Regular' !important;
     padding: 0.5rem;
 }
@@ -1170,6 +1179,10 @@ hr.new4 {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+    }
+
+    .hero-text p {
+        width: 100% !important;
     }
 
     .checkbox-group>* {
