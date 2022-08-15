@@ -296,6 +296,12 @@
                     $("#success-price").html(item.price);
                 }
             });
+        
+            $('input:text[name="id-mobile-legend"]').change(
+                function(){
+                    $("#id-ml").html($(this).val());
+                    $("#success-id-ml").html($(this).val());
+            });
 
         function getVoucher(id){
             var item = data.vouchers.find(item => item.id == id);
